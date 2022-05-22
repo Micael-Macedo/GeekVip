@@ -1,0 +1,118 @@
+:root{
+    --bg-color-primary: #70a1ff;
+    --bg-gray: #ddd;
+    --nav-content: white;
+    --solid-black: black;
+}
+*{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+html, body{
+    
+}
+
+header{
+    background-color: var(--bg-color-primary);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav h1{
+    font-size: 18px;
+}
+nav a, a:hover{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--nav-content);
+    text-decoration: none;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-menu img{
+    margin-right: 10px;
+    max-height: 40px;
+}
+.nav-conteudo a{
+    
+    margin-right: 30px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cards-produtos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card img{
+    width: 100%;
+    max-height: 160px;
+}
+
+.cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lojas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lojas{
+    margin-top: 20px;
+}
+.lojas table, .lojas tr, .lojas th, .lojas td{
+    text-align: center;
+    padding: 5px;
+    border: solid 2px var(--solid-black);
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-color-primary);
+    
+    display: flex;
+    align-items: center;
+}
+
+.footer-autor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-autor img{
+    margin-right: 10px;
+    max-height: 30px;
+}
+
+.footer-autor a, a:hover{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--nav-content);
+    text-decoration: none;
+}
