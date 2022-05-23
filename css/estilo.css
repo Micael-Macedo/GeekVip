@@ -91,6 +91,9 @@ section h1{
     justify-content: center;
     
 }
+.card-body a:hover{
+    background-color: var(--solid-purple);
+}
 .card-body img{
     width: 20px;
     height: 20px;
