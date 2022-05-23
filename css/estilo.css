@@ -3,6 +3,7 @@
     --bg-gray: #ddd;
     --nav-content: white;
     --solid-black: black;
+    --solid-purple: purple;
 }
 *{
     box-sizing: border-box;
@@ -31,11 +32,16 @@ nav h1{
     font-size: 18px;
 }
 nav a, a:hover{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     color: var(--nav-content);
     text-decoration: none;
 }
+nav a:hover{
+    color: var(--solid-purple);
+    font-size: 20px;
+}
+
 
 .nav-menu{
     display: flex;
@@ -45,9 +51,9 @@ nav a, a:hover{
 .nav-menu img{
     margin-right: 10px;
     max-height: 40px;
+    
 }
 .nav-conteudo a{
-    
     margin-right: 30px;
 }
 
@@ -56,6 +62,13 @@ h1{
     align-items: center;
     justify-content: center;
     
+}
+
+section{
+    margin-top: 20px;
+}
+section h1{
+    margin-bottom: 30px;
 }
 .cards-produtos{
     display: flex;
@@ -67,7 +80,19 @@ h1{
     width: 100%;
     max-height: 160px;
 }
-
+.card-body a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card-body img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    
+    
+}
 .cadastro{
     display: flex;
     align-items: center;
@@ -78,10 +103,10 @@ h1{
     align-items: center;
     justify-content: center;
 }
-.lojas{
-    margin-top: 20px;
-}
+
 .lojas table, .lojas tr, .lojas th, .lojas td{
+    
+    justify-content: center;
     text-align: center;
     padding: 5px;
     border: solid 2px var(--solid-black);
@@ -116,3 +141,4 @@ footer{
     color: var(--nav-content);
     text-decoration: none;
 }
+
