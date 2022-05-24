@@ -8,15 +8,16 @@ function pegarNome(nome, checkboxNome){
     }
 }
 
-function verificarSubmit(nomeUsuario, NomeCheckbox, confirmarCheck){
-    nome = document.getElementById(nomeUsuario).value;
-    Usuario = document.getElementById(NomeCheckbox).value;
-    confirma = document.getElementById(confirmarCheck).value;
-    
-    if(confirma == "on" && nome != ""){
+function verificarSubmit(){
+    nome = document.getElementById('name').value;
+    Usuario = document.getElementById('nomeUsuario').value;
+    confirma = document.getElementById('termoDeUso');
+    if(confirma.checked && nome != ""){
         document.getElementById('btnCadastrar').disabled = false;
-    }
+    }else
+        document.getElementById('btnCadastrar').disabled = true;
 }
+
 
 function cadastrar(nomeUsuario){
     Usuario = document.getElementById(nomeUsuario).value;
